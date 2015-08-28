@@ -1,0 +1,27 @@
+footer {
+  width: 100%;
+  height: em(100);
+  clear: both;
+  padding-left: em(50);
+  padding-right: em(50);
+  padding-top: em(25);
+  border-top: 1px solid $light-gray;
+
+  .copyright {
+    float: left;
+  }
+
+  .social {
+    float: right;
+
+    li {
+      display: inline;
+      margin-left: em(10);
+    }
+  }
+
+  i.fa {
+    font-size: $base-font-size * 1.5;
+  }
+}
+
