@@ -20,6 +20,12 @@
     }
   }
 
+  .image {
+    float: right;
+    padding-top: em(75);
+    padding-right: em(250);
+  }
+
   h2 {
     font-size: $base-font-size * 1.5;
     text-align: center;
@@ -37,9 +43,6 @@
   .action {
     text-align: center;
   }
-  img {
-    float: right;
-  }
 }
 
 div#boxes {
@@ -52,7 +55,21 @@ div#boxes {
   .box {
     @include span-columns(4 of 12);
     float: left;
-    text-align: center;
+    padding-left: em(25);
+    padding-right: em(50);
+
+    h2 {
+      font-size: $base-font-size * 1.75;
+      text-align: left;
+    }
+
+    div.line {
+      margin-top: 0;
+      margin-bottom: em(25);
+      width: 25%;
+      line-height: 0;
+      border-bottom: 4px solid $action-color;
+    }
 
     h3 {
       margin-bottom: 0;
@@ -61,6 +78,15 @@ div#boxes {
     .date {
        color: $medium-gray; 
        margin-top: 0;
+       margin-bottom: em(25);
+    }
+    .more {
+      clear: both;
+      float: right;
+    }
+    .cover {
+      @include clearfix;
+      float: left;
     }
   }
 }
