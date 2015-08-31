@@ -1,0 +1,38 @@
+div#book {
+  @include outer-container;
+}
+article.bookitem {
+  @include span-columns(12);
+  margin-top: em(75);
+
+  .bookheader {
+    margin-bottom: em(25);
+    font-size: $base-font-size * .9;
+  }
+
+  h1 {
+    font-size: $base-font-size * 2;
+    }
+
+  div.content {
+    @include span-columns(6 of 12);
+    @include shift(1);
+    float: left;
+  }
+
+  .bodytext {
+    margin-bottom: em(50);
+  }
+
+  .contenttable {
+    h2 {
+      font-size: $base-font-size * 1.5;
+    }
+
+  }
+
+  aside {
+    @include span-columns(5 of 12);
+    float: right;
+  }
+}
