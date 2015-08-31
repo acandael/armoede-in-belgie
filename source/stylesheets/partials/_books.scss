@@ -1,0 +1,23 @@
+div#books {
+  @include outer-container;
+  header {
+    margin-top: em(50);
+    text-align: center;
+    h1 {
+      font-size: $base-font-size * 2;
+    }
+  }
+}
+
+#booklist {
+  margin-top: em(50);
+}
+.book {
+  @include span-columns(4);
+  @include omega(3n);
+  margin-bottom: em(50);
+  img {
+    margin-top: em(25);
+    margin-bottom: em(25);
+  }
+}
