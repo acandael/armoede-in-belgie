@@ -1,0 +1,48 @@
+#colloquium {
+  @include outer-container;
+
+  article {
+    @include span-columns(12);
+  }
+
+  header {
+    margin-top: em(75);
+  }
+
+  footer {
+    padding-left: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .content {
+    @include span-columns(6);
+    float: left;
+
+
+  }
+
+  .date {
+    color: darken($medium-gray, 5);
+  }
+
+  aside {
+    @include span-columns(5);
+    @include shift(1);
+    float: right;
+  }
+
+  h2.program {
+    margin-top: em(50);
+    font-size: $base-font-size * 1.75;
+  }
+
+  i.fa {
+    font-size: $base-font-size * 1;
+    margin-right: em(5);
+  }
+
+  ul {
+   @extend %default-ul; 
+  }
+}
