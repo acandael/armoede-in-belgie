@@ -10,8 +10,10 @@
   }
 
   footer {
+    margin-bottom: em(25);
     padding-left: 0;
     padding-top: 0;
+    height: inherit;
     border-top: none;
   }
 
@@ -22,7 +24,12 @@
 
   }
 
+  .summary {
+    padding-bottom: em(25);
+  }
+
   .date {
+    margin-bottom: 0;
     color: darken($medium-gray, 5);
   }
 
@@ -33,7 +40,7 @@
   }
 
   h2.program {
-    margin-top: em(50);
+    margin-top: em(25);
     font-size: $base-font-size * 1.75;
   }
 

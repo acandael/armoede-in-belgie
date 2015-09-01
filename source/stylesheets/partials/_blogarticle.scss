@@ -1,0 +1,38 @@
+#blog {
+  @include outer-container;
+  @include shift(4);
+  @include span-columns(12);
+  .blogpost {
+    @include span-columns(7);
+    margin-bottom: em(50);
+    .date {
+      color: $medium-gray;
+    }
+    .line {
+      margin-top: 0;
+    }
+    footer {
+      height: inherit;
+      text-align: center;
+    }
+    header {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    h1 {
+      font-size: $base-font-size * 2;
+      text-align: center;
+    }
+  }
+  .bodytext {
+    float: left;
+    margin-top: em(25);
+    margin-left: 0;
+    line-height: 1.6em;
+    font-size: $base-font-size * 1.2;
+
+    p {
+      margin-bottom: em(50);
+    }
+  }
+}

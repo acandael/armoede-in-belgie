@@ -1,0 +1,30 @@
+#blog {
+  @include outer-container;
+  @include span-columns(12);
+  @include shift(4);
+
+  header {
+    margin-top: em(75);
+    margin-bottom: em(75);
+  } 
+
+  .blogarticle {
+    @include span-columns(6); 
+    clear: both;
+    margin-bottom: em(50);
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .date {
+    text-align: center;
+    color: $medium-gray;
+  }
+
+  .line {
+    @include shift(4);
+    margin-top: em(75);
+  }
+}
