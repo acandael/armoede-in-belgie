@@ -1,0 +1,26 @@
+#colloquiums {
+  @include outer-container;
+  @include span-columns(12);
+  @include shift(4);
+  
+  header {
+    margin-top: em(75);
+    margin-bottom: em(75);
+  } 
+
+  .colloquium {
+    @include span-columns(5);
+    clear: both;
+    margin-bottom: em(50);
+  }
+
+  .date {
+    text-align: center;
+    color: $medium-gray;
+  }
+
+  .line {
+    @include shift(4);
+    margin-top: em(75);
+  }
+}
