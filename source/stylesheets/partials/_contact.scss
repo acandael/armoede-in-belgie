@@ -1,0 +1,6 @@
+#contact {
+  @include outer-container;
+  article.contact {
+    margin-top: em(75);
+  }
+}
