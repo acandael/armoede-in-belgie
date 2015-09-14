@@ -29,6 +29,14 @@ article.bookitem {
       font-size: $base-font-size * 1.5;
     }
 
+    tr td:first-child {
+      width: em(120);
+    }
+
+    table {
+      margin-bottom: em(24);
+    }
+
   }
 
   aside {
