@@ -33,7 +33,12 @@ article.bookitem {
       width: em(120);
     }
 
+    tr:last-child td {
+      border: none;
+    }
+
     table {
+      margin-top: em(24);
       margin-bottom: em(24);
     }
 
