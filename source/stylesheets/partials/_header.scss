@@ -46,11 +46,14 @@
       line-height: 1.5em;
       padding-top: 0.6em;
     }
+
+    select#lang {
+      display: inline;
+    }
   }
 
   ul.navigation-menu {
-    clear: both;
-    display: none;
+    display: block;
     margin: 0 auto;
     overflow: visible;
     padding: 0;
@@ -63,7 +66,7 @@
     }
 
     &.show {
-      display: block;
+      display: inline;
     }
   }
 
