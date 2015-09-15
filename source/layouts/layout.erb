@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag  "all" %>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
 
   <body class="<%= page_classes %>">
     <div id="main" role="main">
-      <%= partial "partials/header" %>
+      <%= partial "localizable/header" %>
       <%= yield %>
       <div class="push"></div>
     </div>

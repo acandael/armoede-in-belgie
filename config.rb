@@ -35,6 +35,9 @@
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+# Activate localization
+activate :i18n, :mount_at_root => :nl
+
 # Reload the browser automatically whenever files change
 # configure :development do
 #   activate :livereload

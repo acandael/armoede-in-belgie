@@ -8,7 +8,7 @@ title: Welcome to Middleman
   <p class="date">25 Maart 2014 - Brussel</p>
   <p class="bodytext">Ter gelegenheid van de voorstelling van het Jaarboek Armoede in België 2014, organiseert de POD Maatschappelijke Integratie het colloquium "Armoedebestrijding in België: Welke keuzes?".</p>
     <div class="action">
-    <button>Inschrijven</button>
+      <button><%= t(:inschrijven) %></button>
     </div>
   </div>
   <div class="image">
@@ -17,21 +17,21 @@ title: Welcome to Middleman
 <div>
 <div id="boxes">
   <div class="box">
-    <h2>Het Jaarboek</h2>
+    <h2><%= t(:jaarboek) %></h2>
     <div class="line">&nbsp;</div>
-    <p>Redactie: Pannecoucke, Lahaye, Vranken &amp; Van Rossem</p>
+    <p><%= t(:redactie) %>: Pannecoucke, Lahaye, Vranken &amp; Van Rossem</p>
     <div class="cover">
     <img src="images/cover2.jpg" alt="cover" />
     </div>
-    <p class="more"><a href="books.html">Alle Edities</a></p>
+    <p class="more"><a href="books.html"><%= t(:edities) %></a></p>
   </div>
   <div class="box">
-    <h2>Het Programma</h2>
+    <h2><%= t(:programma) %></h2>
     <div class="line">&nbsp;</div>
-    <p>Photo booth plaid irony keytar McSweeney's, pop-up tousled meh yr chia food truck Thundercats pug. Meditation occupy you probably haven't heard of them leggings aesthetic. Try-hard slow-carb beard mumblecore forage hoodie. Schlitz skateboard keffiyeh letterpress squid. Odd Future PBR&amp;B VHS, fashion axe Portland messenger bag polaroid Truffaut fap. Asymmetrical cred Truffaut, PBR&amp;B single-origin coffee hoodie direct trade meh DIY bicycle rights chambray keffiyeh</p>
+    <p>The French Programme</p>
   </div>
   <div class="box">
-    <h2>Blog Artikels</h2>
+    <h2>Blog</h2>
     <div class="line">&nbsp;</div>
     <h3><a href="#">Unicasts</a></h3>
     <p class="date">10 April 2015</p>
@@ -39,7 +39,7 @@ title: Welcome to Middleman
     <p class="date">10 April 2015</p>
     <h3><a href="#">12 in 12 Challenge</a></h3>
     <p class="date">10 April 2015</p>
-    <p class="more"><a href="blog.html">Alle Artikels</a></p>
+    <p class="more"><a href="blog.html"><%= t(:artikels) %></a></p>
   </div>
 </div>
 </div>
