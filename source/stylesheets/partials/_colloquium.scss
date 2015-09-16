@@ -19,9 +19,6 @@
 
   .content {
     @include span-columns(6);
-    float: left;
-
-
   }
 
   .summary {
@@ -30,7 +27,6 @@
 
   .date {
     margin-bottom: 0;
-    color: darken($medium-gray, 5);
   }
 
   aside {
@@ -41,12 +37,11 @@
 
   h2.program {
     margin-top: em(25);
-    font-size: $base-font-size * 1.75;
+    text-align: left;
   }
 
   i.fa {
     font-size: $base-font-size * 1;
-    margin-right: em(5);
   }
 
   ul {

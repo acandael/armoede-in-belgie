@@ -10,10 +10,6 @@ article.bookitem {
     font-size: $base-font-size * .9;
   }
 
-  h1 {
-    font-size: $base-font-size * 2;
-    }
-
   div.content {
     @include span-columns(6 of 12);
     @include shift(1);
@@ -25,9 +21,6 @@ article.bookitem {
   }
 
   .contenttable {
-    h2 {
-      font-size: $base-font-size * 1.5;
-    }
 
     tr td:first-child {
       width: em(120);

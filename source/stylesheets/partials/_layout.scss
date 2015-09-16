@@ -36,6 +36,15 @@ h1 {
   font-size: $base-font-size * 2;
 }
 
-i {
+h2 {
+  font-size: $base-font-size * 1.5;
+  text-align: center;
+}
+
+i.fa {
   margin-right: em(10);
+}
+
+.date {
+  color: darken($medium-gray, 5);
 }
