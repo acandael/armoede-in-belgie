@@ -9,6 +9,15 @@ html, body {
   height: 100%;
 }
 
+.logo {
+  float: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .5em;
+  color: $action-color;
+}
+
 .push {
   height: 50px;
   @include media($large-screen) {
@@ -33,7 +42,7 @@ div.line {
 }
 
 h1 {
-  font-size: $base-font-size * 2;
+  font-size: $base-font-size * 2.25;
 }
 
 h2 {
@@ -48,3 +57,4 @@ i.fa {
 .date {
   color: darken($medium-gray, 5);
 }
+
