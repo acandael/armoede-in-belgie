@@ -15,6 +15,7 @@
     float: right;
     margin: 0;
     padding-top: 0.5em;
+    padding-right: 1em;
 
     @include media ($large-screen) {
       display: none;
@@ -30,6 +31,7 @@
 
   .logo {
     float: left;
+    padding-top: 0;
 
     img {
       max-height: 2em;
@@ -47,7 +49,11 @@
     }
 
    select#lang {
-      display: inline;
+     clear: both;
+     margin-left: em(15);
+     @include media($large-screen) {
+       display: inline;
+     } 
     }
   }
 
@@ -60,6 +66,7 @@
     margin: 0 auto;
     overflow: visible;
     padding: 0;
+    padding-right: 1em;
     width: 100%;
 
     @include media ($large-screen) {
