@@ -1,10 +1,13 @@
+
 .navigation {
   $large-screen: em(860) !default;
   $large-screen: $large-screen;
   border-bottom: 1px solid $light-gray;
-  height: em(100);
-  padding-left: em(50);
-  padding-right: em(50);
+  @include media($large-screen) {
+    height: em(100);
+    padding-left: em(50);
+    padding-right: em(50);
+  }
 
   // Mobile view
   .navigation-menu-button {
@@ -25,35 +28,51 @@
     padding-top: em(25);
   }
 
+  .logo {
+    float: left;
+
+    img {
+      max-height: 2em;
+      padding-right: 1em;
+    }
+  }
+
   nav {
     float: none;
 
     @include media ($large-screen) {
       float: right;
       line-height: 1.5em;
-      padding-top: 0.6em;
+      padding-top: 0.3em;
     }
 
-    select#lang {
+   select#lang {
       display: inline;
     }
   }
 
   ul.navigation-menu {
-    display: block;
+    clear: both;
+    @include media($large-screen) {
+      clear: none;
+    }
+    display: none;
     margin: 0 auto;
     overflow: visible;
     padding: 0;
     width: 100%;
 
     @include media ($large-screen) {
-      display: block;
+      display: inline;
       margin: 0;
       padding: 0;
     }
 
     &.show {
-      display: inline;
+      display: block;
+      @include media($large-screen) {
+        display: inline;
+      }
     }
   }
 
