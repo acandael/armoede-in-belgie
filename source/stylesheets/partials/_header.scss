@@ -44,6 +44,15 @@
     }
   }
 
+  select#lang {
+    display: inline;
+    float: right;
+    margin-top: 0.3em;
+    margin-right: em(16);
+    margin-bottom: 0;
+    @include media($large-screen) {
+    }
+  }
   nav {
     float: none;
 
@@ -53,14 +62,6 @@
       padding-top: 0.3em;
     }
 
-   select#lang {
-     clear: both;
-     margin-left: em(15);
-     @include span-columns(5);
-     @include media($large-screen) {
-       display: inline;
-     } 
-    }
   }
 
   ul.navigation-menu {
