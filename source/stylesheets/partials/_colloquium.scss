@@ -1,5 +1,7 @@
 #colloquium {
   @include outer-container;
+  padding-left: em(16);
+  padding-right: em(16);
 
   article {
     @include span-columns(12);
@@ -18,7 +20,9 @@
   }
 
   .content {
-    @include span-columns(6);
+    @include media($large-screen){
+      @include span-columns(6);
+    }
   }
 
   .summary {
@@ -30,9 +34,17 @@
   }
 
   aside {
-    @include span-columns(5);
-    @include shift(1);
-    float: right;
+    img {
+      display: none;
+    }
+    @include media($large-screen){
+      @include span-columns(5);
+      @include shift(1);
+      float: right;
+      img {
+        display: block;
+      }
+    }
   }
 
   h2.program {
