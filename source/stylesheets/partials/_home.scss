@@ -95,9 +95,7 @@ div#boxes {
        margin-bottom: em(25);
     }
     .more {
-      @include media($large-screen) {
-        float: right;
-      }
+      text-align: right;
       clear: both;
     }
     .cover {
