@@ -39,8 +39,11 @@
   }
 
   .logo {
-    float: left;
     padding-top: 0;
+    text-align: center;
+    @include media($large-screen) {
+      float: left;
+    }
 
     img {
       max-height: 2em;
