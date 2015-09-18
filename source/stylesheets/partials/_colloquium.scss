@@ -1,14 +1,17 @@
 #colloquium {
   @include outer-container;
-  padding-left: em(16);
-  padding-right: em(16);
+  padding-left: em(24);
+  padding-right: em(24);
 
   article {
     @include span-columns(12);
   }
 
   header {
-    margin-top: em(75);
+    margin-top: em(36);
+    @include media($large-screen){
+      margin-top: em(75);
+    }
   }
 
   footer {
@@ -20,6 +23,7 @@
   }
 
   .content {
+    margin-bottom: em(36);
     @include media($large-screen){
       @include span-columns(6);
     }
