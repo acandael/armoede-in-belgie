@@ -8,11 +8,12 @@
   }
   
   header {
+    margin-top: em(36);
     @include media($large-screen) {
       margin-top: em(75);
     }
     margin-bottom: em(75);
-  } 
+  }
 
   .colloquium {
     @include media($large-screen){
