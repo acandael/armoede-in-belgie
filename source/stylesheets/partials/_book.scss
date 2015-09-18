@@ -1,9 +1,14 @@
 div#book {
   @include outer-container;
+  margin-top: em(36);
+  padding-left: em(24);
+  padding-right: em(24);
+  @include media($large-screen){
+    margin-top: em(75);
+  }
 }
 article.bookitem {
   @include span-columns(12);
-  margin-top: em(75);
 
   .bookheader {
     margin-bottom: em(25);
@@ -11,9 +16,11 @@ article.bookitem {
   }
 
   div.content {
-    @include span-columns(6 of 12);
-    @include shift(1);
-    float: left;
+    @include media($large-screen){
+      @include span-columns(6 of 12);
+      @include shift(1);
+      float: left;
+    }
   }
 
   .bodytext {
@@ -38,7 +45,9 @@ article.bookitem {
   }
 
   aside {
-    @include span-columns(5 of 12);
-    float: right;
+    @include media($large-screen){
+      @include span-columns(5 of 12);
+      float: right;
+    }
   }
 }

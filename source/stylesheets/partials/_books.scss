@@ -1,7 +1,12 @@
 div#books {
   @include outer-container;
+  padding-left: em(24);
+  padding-right: em(24);
   header {
-    margin-top: em(50);
+    margin-top: em(36);
+    @include media($large-screen){
+      margin-top: em(75);
+    }
     text-align: center;
   }
 }
@@ -10,8 +15,10 @@ div#books {
   margin-top: em(50);
 }
 .cover {
-  @include span-columns(4);
-  @include omega(3n);
+  @include media($large-screen){
+    @include span-columns(4);
+    @include omega(3n);
+  }
   margin-bottom: em(50);
   img {
     margin-top: em(25);
