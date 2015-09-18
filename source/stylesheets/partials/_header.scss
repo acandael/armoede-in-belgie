@@ -31,7 +31,7 @@
   .navigation-wrapper {
     @include clearfix;
     position: relative;
-    padding-top: em(25);
+    padding-top: em(8);
   }
 
   .logo {
@@ -45,8 +45,8 @@
   }
 
   select#lang {
-    margin-top: 0.3em;
     margin-bottom: 0;
+    margin-left: em(16);
     @include media($large-screen) {
       float: right;
     }
