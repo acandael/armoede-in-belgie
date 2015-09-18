@@ -1,16 +1,25 @@
 #blog {
   @include outer-container;
-  @include span-columns(12);
-  @include shift(4);
+  padding-left: em(24);
+  padding-right: em(24);
+  margin-top: em(36);
+  @include media($large-screen){
+    @include span-columns(12);
+    @include shift(4);
+  }
 
   header {
-    margin-top: em(75);
-    margin-bottom: em(75);
+    @include media($large-screen){
+      margin-top: em(75);
+      margin-bottom: em(75);
+    }
   }
 
   .blogarticle {
-    @include span-columns(6); 
-    clear: both;
+    @include media($large-screen){
+      @include span-columns(6); 
+      clear: both;
+    }
     margin-bottom: em(50);
 
   }
@@ -20,7 +29,9 @@
   }
 
   .line {
-    @include shift(4);
+    @include media($large-screen){
+      @include shift(4);
+    }
     margin-top: em(75);
   }
 }

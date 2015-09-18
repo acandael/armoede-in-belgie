@@ -1,9 +1,13 @@
 #blog {
   @include outer-container;
-  @include shift(4);
-  @include span-columns(12);
+  @include media($large-screen){
+    @include shift(4);
+    @include span-columns(12);
+  }
   .blogpost {
-    @include span-columns(7);
+    @include media($large-screen){
+      @include span-columns(7);
+    }
     margin-bottom: em(50);
 
     .line {
@@ -12,6 +16,7 @@
     footer {
       height: inherit;
       text-align: center;
+      border-top: none;
     }
     header {
       margin-top: 0;
