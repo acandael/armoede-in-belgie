@@ -56,7 +56,7 @@
    select#lang {
      clear: both;
      margin-left: em(15);
-     @include span-columns(4);
+     @include span-columns(5);
      @include media($large-screen) {
        display: inline;
      } 
