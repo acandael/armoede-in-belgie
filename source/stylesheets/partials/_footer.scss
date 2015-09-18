@@ -23,7 +23,9 @@ footer {
 
     li {
       display: inline;
-      margin-left: em(10);
+      @include media($large-screen) {
+        margin-left: em(10);
+      }
     }
   }
 
