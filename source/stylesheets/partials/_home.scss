@@ -3,13 +3,13 @@ article#home {
 }
 #hero {
   @include clearfix;
-  height: em(300);
+  height: em(350);
   @include media($large-screen) {
     height: em(395);
     margin-top: em(35);
   }
   background: $medium-gray;
-  margin-bottom: 0;
+  margin-bottom: em(36);
   padding-left: em(25);
   padding-right: em(25);
   padding-top: em(8);
@@ -63,20 +63,20 @@ article#home {
 }
 
 div#boxes {
-    @include span-columns(12);
-  @include media($large-screen) {
-  }
-  margin-top: em(35);
-  margin-bottom: em(35);
-
+  @include span-columns(12);
+  margin-top: em(36);
+  margin-bottom: em(36);
 
   .box {
+    margin-left: 0;
+    margin-top: em(56);
+    margin-bottom: em(36);
+
     @include media($large-screen) {
       @include span-columns(4 of 12);
       float: left;
       padding-right: em(25);
     }
-    margin-left: 0;
 
     h2 {
       font-size: $base-font-size * 1.75;
