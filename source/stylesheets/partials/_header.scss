@@ -45,11 +45,10 @@
   }
 
   select#lang {
-    float: right;
     margin-top: 0.3em;
-    margin-right: em(16);
     margin-bottom: 0;
     @include media($large-screen) {
+      float: right;
     }
   }
   nav {
