@@ -32,6 +32,9 @@
     @include clearfix;
     position: relative;
     padding-top: em(8);
+    @include media($large-screen) {
+      padding-top: em(25);
+    }
   }
 
   .logo {
@@ -47,8 +50,9 @@
   select#lang {
     margin-bottom: 0;
     margin-left: em(16);
+    float: right;
     @include media($large-screen) {
-      float: right;
+      margin-top: 0.3em;
     }
   }
   nav {
