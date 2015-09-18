@@ -16,6 +16,11 @@
     margin: 0;
     padding-top: 0.5em;
     padding-right: 1em;
+    font-weight: 700;
+
+    i {
+      margin-right: em(8);
+    }
 
     @include media ($large-screen) {
       display: none;
