@@ -8,7 +8,9 @@
   }
   
   header {
-    margin-top: em(75);
+    @include media($large-screen) {
+      margin-top: em(75);
+    }
     margin-bottom: em(75);
   } 
 
