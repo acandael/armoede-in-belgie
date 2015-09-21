@@ -17,7 +17,7 @@ article.bookitem {
 
   div.content {
     @include media($large-screen){
-      @include span-columns(6 of 12);
+      @include span-columns(7 of 12);
       @include shift(1);
       float: left;
     }
@@ -25,6 +25,10 @@ article.bookitem {
 
   .bodytext {
     margin-bottom: em(50);
+    
+    ul {
+      @extend %default-ul;
+    }
   }
 
   .contenttable {
@@ -46,7 +50,7 @@ article.bookitem {
 
   aside {
     @include media($large-screen){
-      @include span-columns(5 of 12);
+      @include span-columns(4 of 12);
       float: right;
     }
   }
