@@ -20,6 +20,10 @@ div#books {
     @include omega(3n);
   }
   margin-bottom: em(50);
+
+  h2 {
+    text-align: left;
+  }
   img {
     margin-top: em(25);
     margin-bottom: em(25);
