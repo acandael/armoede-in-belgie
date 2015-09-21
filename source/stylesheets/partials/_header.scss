@@ -57,6 +57,7 @@
     margin-left: em(16);
     float: left;
     @include media($large-screen) {
+      float: right;
       margin-top: 0.3em;
     }
   }
