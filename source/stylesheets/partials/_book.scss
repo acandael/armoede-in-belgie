@@ -5,6 +5,8 @@ div#book {
   padding-right: em(24);
   @include media($large-screen){
     margin-top: em(75);
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 article.bookitem {
