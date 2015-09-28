@@ -3,8 +3,8 @@ article#home {
 }
 #hero {
   @include clearfix;
-  height: em(350);
-  background: $medium-gray;
+  height: em(400);
+  background: lighten($medium-gray, 10);
   margin-bottom: em(36);
   padding-left: em(25);
   padding-right: em(25);
