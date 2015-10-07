@@ -1,0 +1,20 @@
+#review {
+  @include outer-container;
+  padding-left: em(24);
+  padding-right: em(24);
+
+  header {
+    margin-top: em(36);
+    @include media($large-screen){
+      margin-top: em(75);
+    }
+    text-align: center;
+    p {
+      text-align: left;
+      @include media($large-screen){
+        @include span-columns(8);
+        @include shift(2);
+      }
+    }
+  }
+}
