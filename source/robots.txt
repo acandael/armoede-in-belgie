@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.armoede-in-belgie.ugent.be/sitemap.xml

@@ -38,6 +38,9 @@
 # Activate localization
 activate :i18n, :mount_at_root => :nl
 
+set :url_root, 'http://www.armoede-in-belgie.ugent.be'
+activate :search_engine_sitemap
+
 # Reload the browser automatically whenever files change
 # configure :development do
 #   activate :livereload
