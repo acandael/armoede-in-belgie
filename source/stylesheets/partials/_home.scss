@@ -103,6 +103,7 @@ div#boxes {
     .more {
       text-align: right;
       clear: both;
+      text-decoration: underline;
     }
     .cover {
       @include media($large-screen) {
