@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="WoJOcJiiKeF4wWANtl6Kq8Bhl62FGYJsdKDdxnh9V3A" />
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || t(:logo) %></title>
+    <title><%= current_page.data.title %> | <%=  t(:logo) if current_page.path != "index.html" %></title>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag "normalize", "all" %>
